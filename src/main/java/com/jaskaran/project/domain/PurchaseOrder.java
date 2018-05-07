@@ -1,7 +1,6 @@
 package com.jaskaran.project.domain;
 
 import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -27,7 +26,6 @@ public class PurchaseOrder
 	@Column(name="AMOUNT")
 	private int totalprice;
 	private int token;
-	
 	
 
 	public int getToken() {
