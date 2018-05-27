@@ -26,8 +26,15 @@ public class PurchaseOrder
 	@Column(name="AMOUNT")
 	private int totalprice;
 	private int token;
+	private String status;
 	
 
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
 	public int getToken() {
 		return token;
 	}

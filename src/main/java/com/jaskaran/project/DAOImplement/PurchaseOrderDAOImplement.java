@@ -25,6 +25,7 @@ public class PurchaseOrderDAOImplement implements PurchaseOrderDAO
 	{
 		try {
 			log.debug("starting of saveOrder method");
+			purchaseOrder.setStatus("Processing");
 			sessionFactory.getCurrentSession().save(purchaseOrder);
 			log.debug("ending of saveOrder method");
 			return true;
