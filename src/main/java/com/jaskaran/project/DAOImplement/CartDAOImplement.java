@@ -102,17 +102,6 @@ public class CartDAOImplement implements CartDAO
 		}
 	}
 
-/*	public boolean changeStatus(int cartid) {
-		String hql = "update Cart set status='O' where cartid='"+cartid+"'";
-		try {
-			sessionFactory.getCurrentSession().createQuery(hql).executeUpdate();
-			return true;
-		} catch (HibernateException e) {
-			e.printStackTrace();
-			return false;
-		}
-	}*/
-
 	public boolean updateCart(Cart cart) {
 		try {
 			sessionFactory.getCurrentSession().saveOrUpdate(cart);

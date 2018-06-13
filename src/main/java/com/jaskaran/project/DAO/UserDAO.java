@@ -12,4 +12,5 @@ public interface UserDAO
 	public User getUser(String email);
 	public boolean updateUser(User user);
 	public boolean deleteUser(String email);
+	public User getUserbyMobile(String mobile);
 }

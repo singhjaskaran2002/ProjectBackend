@@ -84,5 +84,9 @@ public class UserDAOImplement implements UserDAO
 			return false;
 		}
 	}
+
+	public User getUserbyMobile(String mobile) {
+		return sessionFactory.getCurrentSession().get(User.class, mobile);
+	}
 	
 }
